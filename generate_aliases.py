@@ -43,20 +43,22 @@ def main():
         ('pf', 'port-forward', None, ['sys']),
         ('g', 'get', None, None),
         ('d', 'describe', None, None),
+        ('e', 'edit', None, None),        
         ('rm', 'delete', None, None),
         ('run', 'run --rm --restart=Never --image-pull-policy=IfNotPresent -i -t', None, None),
         ]
 
     res = [
-        ('po', 'pods', ['g', 'd', 'rm'], None),
-        ('dep', 'deployment', ['g', 'd', 'rm'], None),
-        ('sts', 'statefulset', ['g', 'd', 'rm'], None),
-        ('svc', 'service', ['g', 'd', 'rm'], None),
-        ('ing', 'ingress', ['g', 'd', 'rm'], None),
-        ('cm', 'configmap', ['g', 'd', 'rm'], None),
-        ('sec', 'secret', ['g', 'd', 'rm'], None),
+        ('po', 'pods', ['e', 'g', 'd', 'rm'], None),
+        ('dep', 'deployment',  ['e', 'g', 'd', 'rm'], None),
+        ('sts', 'statefulset',  ['e', 'g', 'd', 'rm'], None),
+        ('svc', 'service',  ['e', 'g', 'd', 'rm'], None),
+        ('ing', 'ingress',  ['e', 'g', 'd', 'rm'], None),
+        ('cm', 'configmap',  ['e', 'g', 'd', 'rm'], None),
+        ('sec', 'secret',  ['e', 'g', 'd', 'rm'], None),
+        ('vs', 'virtualservice',  ['e', 'g', 'd', 'rm'], None),
         ('no', 'nodes', ['g', 'd'], ['sys']),
-        ('ns', 'namespaces', ['g', 'd', 'rm'], ['sys']),
+        ('ns', 'namespaces',  ['e', 'g', 'd', 'rm'], ['sys']),
         ]
     res_types = [r[0] for r in res]
 
