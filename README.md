@@ -97,6 +97,7 @@ source ~/.kubectl_aliases.nu
 * commands:
   * **`g`**: `get`
   * **`d`**: `describe`
+  * **`e`**: `edit`
   * **`rm`**: `delete`
   * **`a`**: `apply -f`
   * **`ak`**: `apply -k`
@@ -112,6 +113,7 @@ source ~/.kubectl_aliases.nu
   * **`sec`**: `secret`
   * **`ns`**: `namespace`
   * **`no`**: `node`
+  * **`vs`** `virtualservice`
 * flags:
   * output format: **`oyaml`**, **`ojson`**, **`owide`**
   * **`all`**: `--all` or `--all-namespaces` depending on the command
